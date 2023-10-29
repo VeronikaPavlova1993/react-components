@@ -7,7 +7,6 @@ export default class ItemPosts extends React.Component<IPlanet, {}> {
   }
 
   render(): React.ReactNode {
-    console.log(this.props);
     return (
       <div className="post">
         <div className="title__post">
