@@ -24,3 +24,7 @@ export interface IPlanet {
   population: string;
   terrain: string;
 };
+
+export interface IState {
+    planets: IPlanet[];
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import Planets from '../api-info/apiPlanet';
 import ItemPosts from './item-post';
-import { PlanetParams, IPlanet } from '../types/types';
+import { IPlanet, IState } from '../types/types';
 
-export default class Posts extends React.Component {
+export default class Posts extends React.Component<{}, IState> {
+  public state: IState;
   constructor(props: IPlanet) {
     super(props);
     this.state = {
@@ -19,7 +20,7 @@ export default class Posts extends React.Component {
 
   render(): React.ReactNode {
     return (
-    <div className="all_posts">
+      <div className="all_posts">
         <h1 className="title__posts">Planets</h1>
         {this.state.planets.map((planet) => (
           <ItemPosts
