@@ -13,7 +13,7 @@ export default class Posts extends React.Component<{}, IState> {
   }
   componentDidMount() {
     const response = Planets.getAll();
-    response.then((res) => {
+    response.then((res: IPlanet[]) => {
       this.setState({ planets: res });
     });
   }
@@ -24,6 +24,7 @@ export default class Posts extends React.Component<{}, IState> {
         <h1 className="title__posts">Planets</h1>
         {this.state.planets.map((planet) => (
           <ItemPosts
+            key={planet.name}
             name={planet.name}
             orbital_period={planet.orbital_period}
             diameter={planet.diameter}

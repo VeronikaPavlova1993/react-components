@@ -23,8 +23,13 @@ export interface IPlanet {
   climate: string;
   population: string;
   terrain: string;
-};
+}
 
 export interface IState {
-    planets: IPlanet[];
+  planets: IPlanet[];
+}
+
+export interface IStateInput {
+  inputValue: string;
+  planets: IPlanet[];
 }
