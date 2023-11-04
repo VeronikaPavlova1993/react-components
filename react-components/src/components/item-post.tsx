@@ -1,28 +1,26 @@
 import React from 'react';
-import { IPlanet, PlanetParams } from '../types/types';
+import { IPlanet } from '../types/types';
 
-export default class ItemPosts extends React.Component<IPlanet, {}> {
-  constructor(props: PlanetParams) {
-    super(props);
-  }
-
-  render(): React.ReactNode {
-    return (
-      <div className="post">
-        <div className="title__post">
-          <h2>{this.props.name}</h2>
-        </div>
-        <div className="content__post">
-          <p>
-            The orbital period of the planet is {this.props.orbital_period}{' '}
-            days. The diameter of the planet is {this.props.diameter} miles. The
-            rotation period is {this.props.rotation_period} solar days. The
-            climate is {this.props.climate}. The population is{' '}
-            {this.props.population} inhabitants. The type of terrain is{' '}
-            {this.props.terrain}.
-          </p>
-        </div>
+const ItemPosts = (props: IPlanet[]) => {
+  return (
+    <div className="post">
+      <div className="title__post">
+        <h2>{props.post.name}</h2>
       </div>
-    );
-  }
-}
+      <div className="content__post">
+        <p>
+          The orbital period of the planet is {props.post.name}
+          days. The diameter of the planet is {props.post.diameter} miles. The
+          rotation period is {props.post.rotation_period} solar days. The
+          climate is
+          {props.post.climate}. The population is
+          {props.post.population} inhabitants. The type of terrain is
+          {props.post.terrain}.
+        </p>
+        <button>Delete</button>
+      </div>
+    </div>
+  );
+};
+
+export default ItemPosts;
