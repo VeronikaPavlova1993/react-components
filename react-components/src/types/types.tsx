@@ -26,7 +26,7 @@ export interface IPlanet {
 }
 
 export interface IState {
-  planets: IPlanet[];
+  posts: IPlanet[];
 }
 
 export interface IStateInput {
@@ -36,4 +36,10 @@ export interface IStateInput {
 
 export interface IResult {
   getInput: (search: string) => void;
+}
+
+export interface IPagination {
+  number: number;
+  arrayPagination: [];
+  getPageNumber: (searchValue: string) => void;
 }

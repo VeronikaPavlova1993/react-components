@@ -1,12 +1,12 @@
 import React from 'react';
 import ItemPosts from './item-post';
-import { PlanetParams } from '../types/types';
+import { IState, PlanetParams } from '../types/types';
 
-function Posts({ posts }) {
+function Posts({ posts }: IState) {
   return (
     <div className="all_posts">
       <h1 className="title__posts">Planets</h1>
-      {posts.map((planet: PlanetParams) => (
+      {[...posts].map((planet: PlanetParams) => (
         <ItemPosts
           key={planet.name}
           name={planet.name}
