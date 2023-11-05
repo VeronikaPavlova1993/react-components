@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Posts from './components/posts';
-import Search from './components/search';
+import SearchedPlanet from './components/search';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Search />
-        <Posts />
-      </div>
-    );
+function App() {
+  const [localStorage, setLocalStorage] = useState('');
+
+  async function request(param: string) {
+    await setLocalStorage(param);
   }
+
+  return (
+    <div className="main">
+      <SearchedPlanet getInput={request} />
+    </div>
+  );
 }
 
 export default App;

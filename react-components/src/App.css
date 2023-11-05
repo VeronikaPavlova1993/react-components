@@ -5,6 +5,12 @@
 }
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+}
+
+.main{
+  align-items: center;
+  margin: 0 auto;
 }
 .all_posts {
   background-color: rgb(157, 158, 163);

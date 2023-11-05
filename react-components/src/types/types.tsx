@@ -33,3 +33,7 @@ export interface IStateInput {
   inputValue: string;
   planets: IPlanet[];
 }
+
+export interface IResult {
+  getInput: (search: string) => void;
+}
