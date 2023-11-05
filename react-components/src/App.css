@@ -97,12 +97,12 @@ h2 {
   font-weight: bold;
 }
 
-.page_pagination{
+.page_pagination {
   display: flex;
   justify-content: center;
 }
 
-.icon_pagination{
+.icon_pagination {
   display: inline-block;
   background-color: rgb(157, 158, 163);
   font-size: 35px;
@@ -113,8 +113,8 @@ h2 {
   line-height: 3px;
 }
 
-.icon_pagination:hover{
-transform: scale(1.1);
-background-color: rgb(245, 211, 58);
-cursor: pointer;
+.icon_pagination:hover {
+  transform: scale(1.1);
+  background-color: rgb(245, 211, 58);
+  cursor: pointer;
 }
