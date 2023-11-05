@@ -4,15 +4,15 @@ export type PlanetParams = {
   orbital_period: string;
   diameter: string;
   climate: string;
-  created: string;
-  edited: string;
-  films: [];
-  gravity: string;
-  population: string;
-  residents: string;
-  surface_water: string;
+  created?: string;
+  edited?: string;
+  films?: [];
+  gravity?: string;
+  population?: string;
+  residents?: string;
+  surface_water?: string;
   terrain: string;
-  url: string;
+  url?: string;
 };
 
 export interface IPlanet {
