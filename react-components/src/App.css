@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+  background-color: rgb(157, 158, 163);
+}
+
+.main {
+  align-items: center;
+  margin: 0 auto;
+}
+.all_posts {
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post {
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
+  border: 2px solid #050505;
+  border-radius: 5px;
+}
+.title__posts {
+  font-size: 4.5rem;
+}
+.title__post {
+  margin: 2rem 0;
+  text-align: start;
+  padding-left: 1rem;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+.content__post {
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: rgb(7, 7, 7);
+}
+.search {
+  width: auto;
+  height: 10rem;
+}
+.search__form {
+  position: relative;
+  width: 50rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+}
+.search__input {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  border: 2px solid #7ba7ab;
+  border-radius: 5px;
+  outline: none;
+  background: #f9f0da;
+  color: #9e9c9c;
+}
+.search {
+  background: #ebc77a;
+}
+.search__input,
+.search__button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.search__input {
+  width: 100%;
+  height: 4rem;
+  background: #f9f0da;
+  padding-left: 15px;
+}
+.search__button {
+  height: 4rem;
+  width: 6rem;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background: #f15b42;
+  cursor: pointer;
+}
+.search__button:before {
+  content: 'Search';
+  font-family: FontAwesome;
+  color: #f9f0da;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page_pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.icon_pagination {
+  display: inline-block;
+  background-color: rgb(157, 158, 163);
+  font-size: 35px;
+  border: 1px #050505 solid;
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 3px;
+}
+
+.icon_pagination:hover {
+  transform: scale(1.1);
+  background-color: rgb(245, 211, 58);
+  cursor: pointer;
+}
